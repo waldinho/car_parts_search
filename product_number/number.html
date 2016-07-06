@@ -1,0 +1,158 @@
+<style>
+fieldset {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#content-number {
+    border: 1px solid #999;
+    padding: 0 25px;
+    font-family: "Helvetica neue", Helvetica, Arial, "sans-serif";
+    color: #333;
+    border-radius: 5px;
+    width: 920px;
+    background-color: #fff;
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+#content-number h1 {
+    font-weight: 300;
+    font-size: 32px;
+}
+
+#_nkw {
+    width: 715px;
+    height: 40px;
+    color: #999;
+    padding: 0 0 0 10px;
+    float: left;
+}
+
+.search_button {
+    color: #fff;
+    background: #0654b9;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#0079bc), to(#00509d));*/
+    height: 40px;
+    width: 19%;
+    border: 0;
+    font-size: 16px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+.medal {
+    margin-top: -8px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.pa-num-row {
+    padding: 0 0 30px 0;
+    font-size: 12px;
+}
+
+.pa-num-bottomrow {
+    padding: 0 0 55px 0;
+    font-size: 12px;
+}
+
+.pa-num-column {
+    margin-right: 40px;
+    float: left;
+    padding: 5px 0 25px 0;
+}
+
+.pa-num-tyretype {
+    width: 100%;
+    margin: 10px 10px 0 0;
+    background: #fff;
+}
+
+.pa-num-brand {
+    width: 100%;
+    margin: 10px 10px 0 0;
+    background: #fff;
+}
+
+.pa-num-speed {
+    width: 100%;
+    margin: 10px 10px 0 0;
+    background: #fff;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {
+        height: 25px;
+        line-height: 30px;
+        background: #f4f4f4;
+        margin: 0 0 10px 20px;
+    }
+}
+
+@-moz-document url-prefix() {
+    select {
+        padding: 15px 0!important;
+    }
+}
+
+@media screen\0 {
+    select {
+        height: 30px;
+        line-height: 30px;
+    }
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<!-- <script src="http://ir.ebaystatic.com/rs/v/cosvltmp0e03talali2uxcjdl2b.js" type="text/javascript"></script>
+<script src="http://ir.ebaystatic.com/rs/v/f2ikxr4baizdjlhyphqh34uxgue.js" type="text/javascript"></script>
+<script src="http://ir.ebaystatic.com/rs/v/3up5fnhzvi2axjacyahfexqjein.js" type="text/javascript"></script> -->
+<div id="content-number">
+    <h1>
+        Find parts by MPN or OEM number
+    </h1>
+    <form id="adv_search_from" name="adv_search_from" action="http://www.ebay.co.uk/sch/Vehicle-Parts-Accessories/131090/i.html" method="get">
+        <input name="LH_TitleDesc" value="1" type="hidden"/>
+        <div class="pa-num-row">
+            <input aria-labelledby="kw_lengend" type="text" name="_nkw" id="_nkw" size="50" maxlength="300" value='' placeholder="e.g. FIA-46836491" class="pa-num-search" onclick="this.value='';this.style.color='#000';">
+            <div class="pa-num-adv-s mb space-top">
+                <a href="javascript:;">
+                    <input id="search_button" class="search_button" type="submit" value="Search" />
+                </a>
+            </div>
+        </div>
+        <div class="pa-num-bottomrow">
+            <div class="pa-num-column">
+                <input id="LH_TopRatedSellers" class="top_seller" name="LH_TopRatedSellers" type="checkbox" value="1" />
+                <img src="top-rated.png" class="medal" />eBay Top-rated seller
+            </div>
+            <div class="pa-num-column">
+                <fieldset>
+                    <label for="LH_BIN">
+                        <input type="checkbox" id="LH_BIN" name="LH_BIN" value="1" class="pa-num-buy_now"> Buy it now</label>
+                </fieldset>
+            </div>
+            <div class="pa-num-column">
+                <fieldset class="pa-num-checkbox-set">
+                    <label for="LH_ItemConditionNew">
+                        <input type="checkbox" id="LH_ItemConditionNew" name="LH_ItemCondition" value="3" class="pa-num-new"> Condition: New
+                    </label>
+                </fieldset>
+            </div>
+            <div class="pa-num-column">
+                <input id="LH_PrefLoc" class="pa-num-LH_PrefLoc" name="LH_PrefLoc" type="checkbox" value="1" /> Location: UK only
+            </div>
+            <div class="pa-num-column">
+                <fieldset class="pa-num-checkbox-set nested">
+                    <label for="LH_FS">
+                        <input type="checkbox" id="LH_FS" name="LH_FS" value="1"> Free P&amp;P</label>
+                </fieldset>
+            </div>
+            <div class="pa-num-column">
+                <input value="2" name="LH_SellerType" id="LH_SellerType" class="pa-num-LH_SellerType" type="checkbox">
+                <label for="_sasltBus" class="pa-num-cbRdoLbl"> Business seller</label>
+            </div>
+        </div>
+    </form>
+</div>
